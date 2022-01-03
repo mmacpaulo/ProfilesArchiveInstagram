@@ -8,7 +8,7 @@ nw = open('lista.txt', 'r')
 data = pd.DataFrame()
 
 for line in nw.readlines():
-    data.loc[len(data),['Perfil','url']] = [line.strip().split('/')[-2] , line.strip()]
+    data.loc[len(data),['Perfil (@)','URL']] = [line.strip().split('/')[-2] , line.strip()]
 
 # remove duplicadas
 ndata = data.drop_duplicates(keep='last')
