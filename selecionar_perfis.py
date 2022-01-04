@@ -13,6 +13,6 @@ for line in nw.readlines():
 # remove duplicadas
 ndata = data.drop_duplicates(keep='last')
 # salva lista em csv
-ndata.to_csv('lista_organizada.csv',index=False)
+ndata.to_csv('lista_atual.csv',index=False)
 # salva lista em Markdown para visualizar.
-ndata.to_markdown('lista_organizada.md',index=False)
+ndata.to_markdown('lista_atual.md',index=False)
