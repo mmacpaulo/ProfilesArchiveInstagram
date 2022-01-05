@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 # files of local folder
-.lista_md.md
+!/.lista_md.md
 
 # Distribution / packaging
 .Python
