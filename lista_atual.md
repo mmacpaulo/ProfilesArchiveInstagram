@@ -1,3 +1,12 @@
+[Perfis sobre Arquivologia no Instagram](https://github.com/mmacpaulo/ProfilesArchiveInstagram/ target="_blank")
+
+
+Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo'; 'arquivologia' e 'arquivística'.
+
+
+Pesquisa realizada no dia 28/12/2021.
+
+
 | Perfil (@)                     | URL                                                       |
 |:-------------------------------|:----------------------------------------------------------|
 | arquivologiaparaconcurso       | https://www.instagram.com/arquivologiaparaconcurso/       |
