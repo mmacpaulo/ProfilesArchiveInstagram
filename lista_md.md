@@ -1,9 +1,3 @@
- **Perfis sobre Arquivologia no Instagram** 
-
- Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo', 'arquivologia' e 'arquivística'. 
-
- Pesquisa realizada no dia 05/01/2022.
-
 | Perfil (@)                     | URL                                                       |
 |:-------------------------------|:----------------------------------------------------------|
 | arquivologiadescomplicada      | https://www.instagram.com/arquivologiadescomplicada/      |
@@ -108,5 +102,3 @@
 | arquivodaalegria               | https://www.instagram.com/arquivodaalegria/               |
 | arqui_vou                      | https://www.instagram.com/arqui_vou/                      |
 | arquivologiadigital            | https://www.instagram.com/arquivologiadigital/            |
-
- [Informações sobre o projeto 'Perfis sobre Arquivologia no Instagram'](https://github.com/mmacpaulo/ProfilesArchiveInstagram)

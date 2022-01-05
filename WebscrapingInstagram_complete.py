@@ -16,9 +16,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 # <br>
 # https://chromedriver.chromium.org/
 
-# In[134]:
-
-
 #specify the path to chromedriver.exe (download and save on your computer)
 driver = webdriver.Chrome()
 
@@ -30,30 +27,31 @@ username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='password']")))
 
 #enter username and password
+try:
+    with open('login.txt', 'r') as usere:
+        datauser = usere.read()
+        usuario, senha = datauser.split(" ")
+except: 
+    print('arquivo não existe.\n')
+    print('crie o arquivo login.txt com o usuario e senha na mesma linha separados por espaço.')
+usere.close()
+
 # perfilarquivologia 
 username.clear()
-username.send_keys("login")
+username.send_keys(usuario)
 password.clear()
-password.send_keys("senha")
+password.send_keys(senha)
 
 #target the login button and click it
 button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
 
 #We are logged in!
-
-
-# In[135]:
-
-
 #nadle NOT NOW
 
 not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
 not_now2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
 
-
 # ## Search keywords
-
-# In[136]:
 
 def buscar_palavras(keywords):
     import time
@@ -70,25 +68,19 @@ def buscar_palavras(keywords):
 
     return divs
 
-# palavras do txt file
-palavras = open('keywords.txt','r')
-# salvar todas pesquisa no arquivo
-filew = open('lista.txt','w')
-
-for iw in palavras.readlines():
-    divs = buscar_palavras(f'@{iw.split()[0]}')
+with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
+    buscapor = palavras.readlines()
+    for iw in buscapor:
+        divs = buscar_palavras(f'@{iw.split()[0]}')
     
-    for div in divs:
-        print("___")
-    # elements = div.find_elements(By.TAG_NAME, 'div')
-        elements = div.find_elements(By.TAG_NAME, 'a')
+        for div in divs:
+            print("___")
+            elements = div.find_elements(By.TAG_NAME, 'a')
 
-        # elements = div.find_elements(By.CLASS_NAME, '-qQT3')
-        # elements = div.find_elements(By.ID, 'f1e55b72341e9a4')
-        
-        for element in elements:
-            filew.write(element.get_attribute("href"))
-            filew.write('\n')
+            for element in elements:
+                filew.write(element.get_attribute("href"))
+                filew.write('\n')
 
+palavras.close()
 filew.close()
 driver.quit()
