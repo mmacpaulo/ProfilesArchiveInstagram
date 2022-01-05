@@ -1,4 +1,4 @@
-**[Perfis sobre Arquivologia no Instagram](https://github.com/mmacpaulo/ProfilesArchiveInstagram/?target=_blank)**
+**[Perfis sobre Arquivologia no Instagram](https://github.com/mmacpaulo/ProfilesArchiveInstagram?target=_blank)**
 
 
 Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo'; 'arquivologia' e 'arquivística'.
