@@ -1,4 +1,4 @@
-**[Perfis sobre Arquivologia no Instagram](https://github.com/mmacpaulo/ProfilesArchiveInstagram?target="_blank")**
+**Perfis sobre Arquivologia no Instagram**
 
 
 Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo'; 'arquivologia' e 'arquivística'.
@@ -116,3 +116,6 @@ Pesquisa realizada no dia 28/12/2021.
 | arq_taticabral                 | https://www.instagram.com/arq_taticabral/                 |
 | paginasdavida_novela           | https://www.instagram.com/paginasdavida_novela/           |
 | arquivotapasebeijos            | https://www.instagram.com/arquivotapasebeijos/            |
+
+
+[Informações sobre o projeto 'Perfis sobre Arquivologia no Instagram'](https://github.com/mmacpaulo/ProfilesArchiveInstagram)
