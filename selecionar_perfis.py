@@ -3,6 +3,7 @@
 
 import pandas as pd
 from datetime import date
+import numpy as np
 
 today = date.today()
 # dd/mm/YY
@@ -16,11 +17,15 @@ for line in nw.readlines():
     data.loc[len(data),['Perfil (@)','URL']] = [line.strip().split('/')[-2] , line.strip()]
 
 # remove duplicadas
-ndata = data.drop_duplicates(keep='last')
+ndata = data.drop_duplicates(keep='last').reset_index(drop=True)
+# reindex
+ndata.index = pd.RangeIndex(start=1, stop=len(ndata)+1, step=1)
+
 # salva lista em csv
-ndata.to_csv('lista_atual.csv',index=False)
+ndata.to_csv('lista_atual.csv')
+
 # salva lista em Markdown para visualizar.
-ndata.to_markdown('lista_md.md',index=False)
+ndata.to_markdown('lista_md.md')
 
 with open('lista_atual.md','w') as lista_out, open('lista_md.md') as listamd:
 

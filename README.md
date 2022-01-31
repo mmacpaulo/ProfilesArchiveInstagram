@@ -1,1 +1,1 @@
-O algoritmos de automatização para a busca dos perfis existentes no intagram foi escrita utilizando a biblioteca SELENIUM
+O algoritmos de automatização para a busca dos perfis existentes no intagram foi escrita utilizando a biblioteca SELENIUM para realizar o login no instagram e a busca por perfils relacionados. As palavras buscadas são relacionadas 

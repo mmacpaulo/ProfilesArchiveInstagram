@@ -2,111 +2,121 @@
 
  Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo', 'arquivologia' e 'arquivística'. 
 
- Pesquisa realizada no dia 05/01/2022.
+ Pesquisa realizada no dia 31/01/2022.
 
-| Perfil (@)                     | URL                                                       |
-|:-------------------------------|:----------------------------------------------------------|
-| arquivologiadescomplicada      | https://www.instagram.com/arquivologiadescomplicada/      |
-| caarq_unb                      | https://www.instagram.com/caarq_unb/                      |
-| arquivologiabrasil             | https://www.instagram.com/arquivologiabrasil/             |
-| _arquivologia                  | https://www.instagram.com/_arquivologia/                  |
-| arquivologia                   | https://www.instagram.com/arquivologia/                   |
-| turmaarq2019.1                 | https://www.instagram.com/turmaarq2019.1/                 |
-| arqmemoci                      | https://www.instagram.com/arqmemoci/                      |
-| arquivologiaunb                | https://www.instagram.com/arquivologiaunb/                |
-| arquivologia_python            | https://www.instagram.com/arquivologia_python/            |
-| ufpbcaaarq                     | https://www.instagram.com/ufpbcaaarq/                     |
-| brarquivologia                 | https://www.instagram.com/brarquivologia/                 |
-| agoraarquivologia              | https://www.instagram.com/agoraarquivologia/              |
-| arqcon_                        | https://www.instagram.com/arqcon_/                        |
-| ufesarquivologia               | https://www.instagram.com/ufesarquivologia/               |
-| arquiv05                       | https://www.instagram.com/arquiv05/                       |
-| arqui_oque                     | https://www.instagram.com/arqui_oque/                     |
-| searq.ufmg                     | https://www.instagram.com/searq.ufmg/                     |
-| arqemmovimento                 | https://www.instagram.com/arqemmovimento/                 |
-| arquivologia_ufam              | https://www.instagram.com/arquivologia_ufam/              |
-| maisarquivologia               | https://www.instagram.com/maisarquivologia/               |
-| vaniaalvesarquivologia         | https://www.instagram.com/vaniaalvesarquivologia/         |
-| papeldarq                      | https://www.instagram.com/papeldarq/                      |
-| consolacoes                    | https://www.instagram.com/consolacoes/                    |
-| darquivologia                  | https://www.instagram.com/darquivologia/                  |
-| cparq.arquivologia             | https://www.instagram.com/cparq.arquivologia/             |
-| estudos.arqui                  | https://www.instagram.com/estudos.arqui/                  |
-| entendendoarquivologia0        | https://www.instagram.com/entendendoarquivologia0/        |
-| perfilarquivologia             | https://www.instagram.com/perfilarquivologia/             |
-| arquivoconcursosonline         | https://www.instagram.com/arquivoconcursosonline/         |
-| arquivistica                   | https://www.instagram.com/arquivistica/                   |
-| citacoesarquivisticas          | https://www.instagram.com/citacoesarquivisticas/          |
-| fp_arquivisticas               | https://www.instagram.com/fp_arquivisticas/               |
-| uniaoarquivistica              | https://www.instagram.com/uniaoarquivistica/              |
-| basededadosemarquivistica_bda  | https://www.instagram.com/basededadosemarquivistica_bda/  |
-| fparquiviticas                 | https://www.instagram.com/fparquiviticas/                 |
-| ajconsultoriaarquivistica      | https://www.instagram.com/ajconsultoriaarquivistica/      |
-| jed.arq                        | https://www.instagram.com/jed.arq/                        |
-| pesquisasarquivisticas         | https://www.instagram.com/pesquisasarquivisticas/         |
-| diplomaticaufpb                | https://www.instagram.com/diplomaticaufpb/                |
-| rede.arquivistica              | https://www.instagram.com/rede.arquivistica/              |
-| vitrinearquivistica            | https://www.instagram.com/vitrinearquivistica/            |
-| midiarquivistica               | https://www.instagram.com/midiarquivistica/               |
-| arquivistica2714               | https://www.instagram.com/arquivistica2714/               |
-| joana_consultoria_arquivistica | https://www.instagram.com/joana_consultoria_arquivistica/ |
-| ivjacro                        | https://www.instagram.com/ivjacro/                        |
-| ofwcaixas                      | https://www.instagram.com/ofwcaixas/                      |
-| fparquivisticas                | https://www.instagram.com/fparquivisticas/                |
-| arquivopublicorj               | https://www.instagram.com/arquivopublicorj/               |
-| arquivocentral.unirio          | https://www.instagram.com/arquivocentral.unirio/          |
-| arquivolab                     | https://www.instagram.com/arquivolab/                     |
-| arquivologiauel                | https://www.instagram.com/arquivologiauel/                |
-| arquivonacionalbrasil          | https://www.instagram.com/arquivonacionalbrasil/          |
-| arquivologia_ufpb              | https://www.instagram.com/arquivologia_ufpb/              |
-| arquivopublicoitajai           | https://www.instagram.com/arquivopublicoitajai/           |
-| arquivoderioclaro              | https://www.instagram.com/arquivoderioclaro/              |
-| arquivocentral.ufsc            | https://www.instagram.com/arquivocentral.ufsc/            |
-| arquivopublicovca              | https://www.instagram.com/arquivopublicovca/              |
-| arquivosuff                    | https://www.instagram.com/arquivosuff/                    |
-| arquivopublicodepernambuco     | https://www.instagram.com/arquivopublicodepernambuco/     |
-| arquivologiafurg               | https://www.instagram.com/arquivologiafurg/               |
-| arquivopublicolondrina         | https://www.instagram.com/arquivopublicolondrina/         |
-| arquivomunicipaldecampinas     | https://www.instagram.com/arquivomunicipaldecampinas/     |
-| arquivotech                    | https://www.instagram.com/arquivotech/                    |
-| arquivocentralufpa             | https://www.instagram.com/arquivocentralufpa/             |
-| arquivodacuriademaceio         | https://www.instagram.com/arquivodacuriademaceio/         |
-| arquivologiaufsc               | https://www.instagram.com/arquivologiaufsc/               |
-| arquivoestadopa                | https://www.instagram.com/arquivoestadopa/                |
-| arquivologiaunirio             | https://www.instagram.com/arquivologiaunirio/             |
-| arquivologiaconcursos          | https://www.instagram.com/arquivologiaconcursos/          |
-| arquivopublicodopi             | https://www.instagram.com/arquivopublicodopi/             |
-| arquivocentralufpb             | https://www.instagram.com/arquivocentralufpb/             |
-| arquivologiando                | https://www.instagram.com/arquivologiando/                |
-| arquivooculto                  | https://www.instagram.com/arquivooculto/                  |
-| arquivologiaufes               | https://www.instagram.com/arquivologiaufes/               |
-| arquivopublicoalagoas          | https://www.instagram.com/arquivopublicoalagoas/          |
-| arquivoux                      | https://www.instagram.com/arquivoux/                      |
-| arquivopublicors               | https://www.instagram.com/arquivopublicors/               |
-| arquivohistoricopoa            | https://www.instagram.com/arquivohistoricopoa/            |
-| arquivopublicoam               | https://www.instagram.com/arquivopublicoam/               |
-| arquivo_ico                    | https://www.instagram.com/arquivo_ico/                    |
-| arquivologiabr                 | https://www.instagram.com/arquivologiabr/                 |
-| arquivohistoricomunicipalsp    | https://www.instagram.com/arquivohistoricomunicipalsp/    |
-| arquivomisterio                | https://www.instagram.com/arquivomisterio/                |
-| arquivopublicomg               | https://www.instagram.com/arquivopublicomg/               |
-| arquivo_historico_rs           | https://www.instagram.com/arquivo_historico_rs/           |
-| arquivoieb                     | https://www.instagram.com/arquivoieb/                     |
-| arquivoforadacaixa             | https://www.instagram.com/arquivoforadacaixa/             |
-| arquivoestadosp                | https://www.instagram.com/arquivoestadosp/                |
-| arquivomoderno_                | https://www.instagram.com/arquivomoderno_/                |
-| arquivologiaparaconcurso       | https://www.instagram.com/arquivologiaparaconcurso/       |
-| arquivo_central                | https://www.instagram.com/arquivo_central/                |
-| arquivofdr                     | https://www.instagram.com/arquivofdr/                     |
-| arquivosaoroque                | https://www.instagram.com/arquivosaoroque/                |
-| arquivohistorico_eba_ufrj      | https://www.instagram.com/arquivohistorico_eba_ufrj/      |
-| arquivologiaconcurso           | https://www.instagram.com/arquivologiaconcurso/           |
-| arquivoabc.ufabc               | https://www.instagram.com/arquivoabc.ufabc/               |
-| arquivopublicosc               | https://www.instagram.com/arquivopublicosc/               |
-| arquivojuri                    | https://www.instagram.com/arquivojuri/                    |
-| arquivo_alfa                   | https://www.instagram.com/arquivo_alfa/                   |
-| arquivodaalegria               | https://www.instagram.com/arquivodaalegria/               |
-| arqui_vou                      | https://www.instagram.com/arqui_vou/                      |
-| arquivologiadigital            | https://www.instagram.com/arquivologiadigital/            |
+|     | Perfil (@)                     | URL                                                       |
+|----:|:-------------------------------|:----------------------------------------------------------|
+|   1 | arquivologiando                | https://www.instagram.com/arquivologiando/                |
+|   2 | arquivologiabrasil             | https://www.instagram.com/arquivologiabrasil/             |
+|   3 | arquivologia                   | https://www.instagram.com/arquivologia/                   |
+|   4 | turmaarq2019.1                 | https://www.instagram.com/turmaarq2019.1/                 |
+|   5 | caarq_unb                      | https://www.instagram.com/caarq_unb/                      |
+|   6 | arqcon_                        | https://www.instagram.com/arqcon_/                        |
+|   7 | ufesarquivologia               | https://www.instagram.com/ufesarquivologia/               |
+|   8 | brarquivologia                 | https://www.instagram.com/brarquivologia/                 |
+|   9 | arqui_oque                     | https://www.instagram.com/arqui_oque/                     |
+|  10 | arqemmovimento                 | https://www.instagram.com/arqemmovimento/                 |
+|  11 | arquivologiaunb                | https://www.instagram.com/arquivologiaunb/                |
+|  12 | arquiv05                       | https://www.instagram.com/arquiv05/                       |
+|  13 | arqmemoci                      | https://www.instagram.com/arqmemoci/                      |
+|  14 | agoraarquivologia              | https://www.instagram.com/agoraarquivologia/              |
+|  15 | maisarquivologia               | https://www.instagram.com/maisarquivologia/               |
+|  16 | arquivologia_ufam              | https://www.instagram.com/arquivologia_ufam/              |
+|  17 | searq.ufmg                     | https://www.instagram.com/searq.ufmg/                     |
+|  18 | ufpbcaaarq                     | https://www.instagram.com/ufpbcaaarq/                     |
+|  19 | consolacoes                    | https://www.instagram.com/consolacoes/                    |
+|  20 | inovaarquivologia              | https://www.instagram.com/inovaarquivologia/              |
+|  21 | cparq.arquivologia             | https://www.instagram.com/cparq.arquivologia/             |
+|  22 | papeldarq                      | https://www.instagram.com/papeldarq/                      |
+|  23 | darquivologia                  | https://www.instagram.com/darquivologia/                  |
+|  24 | arquivoconcursosonline         | https://www.instagram.com/arquivoconcursosonline/         |
+|  25 | vaniaalvesarquivologia         | https://www.instagram.com/vaniaalvesarquivologia/         |
+|  26 | entendendoarquivologia0        | https://www.instagram.com/entendendoarquivologia0/        |
+|  27 | arquivologiaemdestaque         | https://www.instagram.com/arquivologiaemdestaque/         |
+|  28 | perfilarquivologia             | https://www.instagram.com/perfilarquivologia/             |
+|  29 | arquivistica                   | https://www.instagram.com/arquivistica/                   |
+|  30 | basededadosemarquivistica_bda  | https://www.instagram.com/basededadosemarquivistica_bda/  |
+|  31 | citacoesarquivisticas          | https://www.instagram.com/citacoesarquivisticas/          |
+|  32 | vitrinearquivistica            | https://www.instagram.com/vitrinearquivistica/            |
+|  33 | diplomaticaufpb                | https://www.instagram.com/diplomaticaufpb/                |
+|  34 | pesquisasarquivisticas         | https://www.instagram.com/pesquisasarquivisticas/         |
+|  35 | universo_arquivistico          | https://www.instagram.com/universo_arquivistico/          |
+|  36 | rede.arquivistica              | https://www.instagram.com/rede.arquivistica/              |
+|  37 | gearqpb                        | https://www.instagram.com/gearqpb/                        |
+|  38 | uniaoarquivistica              | https://www.instagram.com/uniaoarquivistica/              |
+|  39 | midiarquivistica               | https://www.instagram.com/midiarquivistica/               |
+|  40 | fparquiviticas                 | https://www.instagram.com/fparquiviticas/                 |
+|  41 | fundamentos_arquivisticos      | https://www.instagram.com/fundamentos_arquivisticos/      |
+|  42 | joana_consultoria_arquivistica | https://www.instagram.com/joana_consultoria_arquivistica/ |
+|  43 | ajconsultoriaarquivistica      | https://www.instagram.com/ajconsultoriaarquivistica/      |
+|  44 | jed.arq                        | https://www.instagram.com/jed.arq/                        |
+|  45 | arquivistica2714               | https://www.instagram.com/arquivistica2714/               |
+|  46 | universoarquivistico           | https://www.instagram.com/universoarquivistico/           |
+|  47 | fp_arquivisticas               | https://www.instagram.com/fp_arquivisticas/               |
+|  48 | olhararquivistico1             | https://www.instagram.com/olhararquivistico1/             |
+|  49 | ivjacro                        | https://www.instagram.com/ivjacro/                        |
+|  50 | rn_negocios_arquivisticos      | https://www.instagram.com/rn_negocios_arquivisticos/      |
+|  51 | ofwcaixas                      | https://www.instagram.com/ofwcaixas/                      |
+|  52 | vincarq                        | https://www.instagram.com/vincarq/                        |
+|  53 | censoarquivistico              | https://www.instagram.com/censoarquivistico/              |
+|  54 | arquivistico                   | https://www.instagram.com/arquivistico/                   |
+|  55 | gesdarq_servicos_arquivisticos | https://www.instagram.com/gesdarq_servicos_arquivisticos/ |
+|  56 | panoramaarquivistico           | https://www.instagram.com/panoramaarquivistico/           |
+|  57 | fparquivisticas                | https://www.instagram.com/fparquivisticas/                |
+|  58 | arquivopublicolondrina         | https://www.instagram.com/arquivopublicolondrina/         |
+|  59 | arquivopublicovca              | https://www.instagram.com/arquivopublicovca/              |
+|  60 | arquivonacionalbrasil          | https://www.instagram.com/arquivonacionalbrasil/          |
+|  61 | arquivocentral.unirio          | https://www.instagram.com/arquivocentral.unirio/          |
+|  62 | arquivologiaconcursos          | https://www.instagram.com/arquivologiaconcursos/          |
+|  63 | arquivopublicoalagoas          | https://www.instagram.com/arquivopublicoalagoas/          |
+|  64 | arquivoestadosp                | https://www.instagram.com/arquivoestadosp/                |
+|  65 | arquivopublicorj               | https://www.instagram.com/arquivopublicorj/               |
+|  66 | arquivologia_ufpb              | https://www.instagram.com/arquivologia_ufpb/              |
+|  67 | arquivopublicodepernambuco     | https://www.instagram.com/arquivopublicodepernambuco/     |
+|  68 | arquivohistoricopoa            | https://www.instagram.com/arquivohistoricopoa/            |
+|  69 | nossoarquivonacional           | https://www.instagram.com/nossoarquivonacional/           |
+|  70 | arquivohistoricomunicipalsp    | https://www.instagram.com/arquivohistoricomunicipalsp/    |
+|  71 | arquivopublicors               | https://www.instagram.com/arquivopublicors/               |
+|  72 | arquivopublicoam               | https://www.instagram.com/arquivopublicoam/               |
+|  73 | arquivoestadopa                | https://www.instagram.com/arquivoestadopa/                |
+|  74 | arquivo_central                | https://www.instagram.com/arquivo_central/                |
+|  75 | arquivodaalegria               | https://www.instagram.com/arquivodaalegria/               |
+|  76 | arquivocentralufpb             | https://www.instagram.com/arquivocentralufpb/             |
+|  77 | arquivopretinhobasico          | https://www.instagram.com/arquivopretinhobasico/          |
+|  78 | arquivojuri                    | https://www.instagram.com/arquivojuri/                    |
+|  79 | arquivologiaconcurso           | https://www.instagram.com/arquivologiaconcurso/           |
+|  80 | arquivoieb                     | https://www.instagram.com/arquivoieb/                     |
+|  81 | arquivologiaufes               | https://www.instagram.com/arquivologiaufes/               |
+|  82 | arquivologiaparaconcurso       | https://www.instagram.com/arquivologiaparaconcurso/       |
+|  83 | arquivocentralufpa             | https://www.instagram.com/arquivocentralufpa/             |
+|  84 | arquivologiaunirio             | https://www.instagram.com/arquivologiaunirio/             |
+|  85 | arquivologiadigital            | https://www.instagram.com/arquivologiadigital/            |
+|  86 | arquivo_ico                    | https://www.instagram.com/arquivo_ico/                    |
+|  87 | arquivolab                     | https://www.instagram.com/arquivolab/                     |
+|  88 | arquivopublico.curuca          | https://www.instagram.com/arquivopublico.curuca/          |
+|  89 | arquivologiabr                 | https://www.instagram.com/arquivologiabr/                 |
+|  90 | arquivopublicosc               | https://www.instagram.com/arquivopublicosc/               |
+|  91 | arquivoux                      | https://www.instagram.com/arquivoux/                      |
+|  92 | arquivogeralusp                | https://www.instagram.com/arquivogeralusp/                |
+|  93 | arquivologiafurg               | https://www.instagram.com/arquivologiafurg/               |
+|  94 | arquivocentral.ufsc            | https://www.instagram.com/arquivocentral.ufsc/            |
+|  95 | arquivodacuriademaceio         | https://www.instagram.com/arquivodacuriademaceio/         |
+|  96 | arquivotech                    | https://www.instagram.com/arquivotech/                    |
+|  97 | arqui_vou                      | https://www.instagram.com/arqui_vou/                      |
+|  98 | arquivomunicipaldecampinas     | https://www.instagram.com/arquivomunicipaldecampinas/     |
+|  99 | arquivopublicoitajai           | https://www.instagram.com/arquivopublicoitajai/           |
+| 100 | arquivoderioclaro              | https://www.instagram.com/arquivoderioclaro/              |
+| 101 | arquivo_historico_rs           | https://www.instagram.com/arquivo_historico_rs/           |
+| 102 | arquivologiaufsc               | https://www.instagram.com/arquivologiaufsc/               |
+| 103 | arquivopublicodopi             | https://www.instagram.com/arquivopublicodopi/             |
+| 104 | arquivologiauel                | https://www.instagram.com/arquivologiauel/                |
+| 105 | arquivosuff                    | https://www.instagram.com/arquivosuff/                    |
+| 106 | arquivologia_python            | https://www.instagram.com/arquivologia_python/            |
+| 107 | arquivologiadescomplicada      | https://www.instagram.com/arquivologiadescomplicada/      |
+| 108 | arquivomoderno_                | https://www.instagram.com/arquivomoderno_/                |
+| 109 | arquivopublicomg               | https://www.instagram.com/arquivopublicomg/               |
+| 110 | _arquivologia                  | https://www.instagram.com/_arquivologia/                  |
+| 111 | arquivofdr                     | https://www.instagram.com/arquivofdr/                     |
+| 112 | arquivooculto                  | https://www.instagram.com/arquivooculto/                  |
 
  [Informações sobre o projeto 'Perfis sobre Arquivologia no Instagram'](https://github.com/mmacpaulo/ProfilesArchiveInstagram)
