@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 # files of local folder
-!/.lista_md.md
+lista_md.md
 
 # Distribution / packaging
 .Python
@@ -85,6 +85,7 @@ ipython_config.py
 
 # pyenv
 .python-version
+.Rhistory
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.

@@ -1,1 +1,1 @@
-login senha
+user password
