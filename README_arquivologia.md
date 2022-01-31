@@ -7,4 +7,4 @@ A primeira lista gerada no dia 28 de dezembro de 2021 pela automatização da bu
 O projeto 'Perfis sobre Arquivologia no Instagram' foi idealizado e desenvolvido por Marcos Machado Paulo (acadêmico de Arquivologia da UFSM) e Cláudio Machado Paulo (Doutor em Ciências e Aplicações Geoespaciais pela UPM-SP e Cientista de Dados).
 
 
-[^1]: A pesquisa está registrada sob o [nº 057010 no GEAIC/CCSH/UFSM](https://portal.ufsm.br/projetos/publico/projetos/view.html?idProjeto=69532), de autoria do acadêmico Marcos Machado Paulo, orientação do professor Me. Rafael Chaves Ferreira, e integrou a etapa parcial para conclusão do curso de Arquivologia da UFSM, com defesa realizada no dia 31 de janeiro de 2020 e [disponível via Youtube](https://www.youtube.com/watch?v=91Chb0Kebz8).
+[^1]: A pesquisa está registrada sob o nº 057010 no GEAIC/CCSH/UFSM, de autoria do acadêmico Marcos Machado Paulo, orientação do professor Me. Rafael Chaves Ferreira. [Clique aqui para acessar](https://portal.ufsm.br/projetos/publico/projetos/view.html?idProjeto=69532).
