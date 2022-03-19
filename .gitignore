@@ -7,6 +7,9 @@ __pycache__/
 *.so
 # files of local folder
 lista_md.md
+login_out.txt
+scrap_follow_perfis.py
+workflow.yml
 
 # Distribution / packaging
 .Python
