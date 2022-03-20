@@ -45,7 +45,7 @@ button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELE
 #We are logged in!
 #nadle NOT NOW
 
-not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not now")]'))).click()
+not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
 # not_now2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
 
 # ## Search keywords
@@ -54,7 +54,7 @@ def buscar_palavras(keywords):
     import time
 
 #target the search input field
-    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Pesquisar']")))
+    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
     searchbox.clear()
 
 #search for the hashtag cat
