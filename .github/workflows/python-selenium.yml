@@ -1,4 +1,4 @@
-name: scraper-instagram
+name: scraper-instagram_bot
 
 on:
   [push]
