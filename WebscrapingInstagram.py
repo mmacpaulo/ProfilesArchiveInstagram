@@ -47,7 +47,9 @@ button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "
 #We are logged in!
 #nadle NOT NOW
 
-not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
+# not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
+not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]'))).click()
+
 # not_now2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
 
 # ## Search keywords
