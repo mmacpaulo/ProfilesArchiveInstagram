@@ -54,10 +54,10 @@ def buscar_palavras(keywords):
 
 #target the search input field
     searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]')))
-    # searchbox.click()
-    # time.sleep(1)
+    time.sleep(1)
+    searchbox.click().clear()
 
-    searchbox.clear()
+    # searchbox.clear()
 
 #search for the hashtag cat
     # keyword = "arquivologia"
