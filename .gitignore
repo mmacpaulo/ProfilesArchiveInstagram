@@ -9,7 +9,9 @@ __pycache__/
 lista_md.md
 login_out.txt
 scrap_follow_perfis.py
-workflow.yml
+format_files.py
+python-selenium.yml
+lista.txt
 
 # Distribution / packaging
 .Python

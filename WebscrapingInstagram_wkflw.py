@@ -122,6 +122,7 @@ from datetime import date
 today = date.today()
 # dd/mm/YY
 d1 = today.strftime("%d%m%Y")
+d1fmt = today.strftime("%d/%/m/%Y")
 
 data = pd.read_csv('lista.txt')
 fileout = f"lista_{d1}"
@@ -136,17 +137,17 @@ for iw in ndata.values:
 
 # salva lista em csv
 outdata.index = pd.RangeIndex(start=1, stop=len(ndata)+1, step=1)
-outdata.to_csv(fileout+'.csv',index=False)
+outdata.to_csv(fileout+'.csv')
 # salva lista em Markdown para visualizar.
-outdata.to_markdown(fileout+'.md',index=False)
+outdata.to_markdown(fileout+'.md')
 # criar uma lista temporaria
-outdata.to_markdown('lista_md.md',index=False)
+outdata.to_markdown('lista_md.md')
 
 driver.quit()
 # formata o arquivo para apresentar no github
 with open('lista_atual.md','w') as lista_out, open('lista_md.md') as listamd:
 
-    cab =  f" **Perfis sobre Arquivologia no Instagram** \n\n Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo', 'arquivologia' e 'arquivística'. \n\n Pesquisa realizada no dia {d1}.\n\n"
+    cab =  f" **Perfis sobre Arquivologia no Instagram** \n\n Lista dos perfis encontratos a partir da pesquisa com os termos 'arquivo', 'arquivologia' e 'arquivística'. \n\n Pesquisa realizada no dia {d1fmt}.\n\n"
     lista_out.write(cab)
     for il in listamd.readlines():
         lista_out.write(f'{il}')
