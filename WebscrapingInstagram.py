@@ -38,8 +38,7 @@ username.clear()
 username.send_keys(usuario)
 password.clear()
 password.send_keys(senha)
-print('Saindo.!!')
-exit()
+
 #target the login button and click it
 button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
 
