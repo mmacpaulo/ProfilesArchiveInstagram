@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-
+import os
 
 # ## Download ChromeDriver
 # Now we need to download latest stable release of ChromeDriver from:
@@ -29,14 +29,9 @@ username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='password']")))
 
 #enter username and password
-try:
-    with open('login_out.txt', 'r') as usere:
-        datauser = usere.read()
-        usuario, senha = datauser.split(" ")
-except: 
-    print('arquivo não existe.\n')
-    print('crie o arquivo login.txt com o usuario e senha na mesma linha separados por espaço.')
-usere.close()
+usuario = os.getenv('Usuario')
+senha = os.environ.get('Senha_secreta')
+print('login efetuado')
 
 # perfilarquivologia 
 username.clear()

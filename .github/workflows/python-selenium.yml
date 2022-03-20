@@ -35,11 +35,11 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          Usuario: ${{secrets.USUARIO}}
+          Senha: ${{secrets.SENHA_SECRETA}}
+
         run: python WebscrapingInstagram.py
       
-#       - name: execute py script for analysis # analyse datas
-#         run: python analysis_bikes.py
-          
 #       - name: commit files
 #         run: |
 #           git config --local user.email "action@github.com"
