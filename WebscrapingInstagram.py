@@ -40,7 +40,7 @@ password.send_keys(senha)
 print('login efetuado')
 
 #target the login button and click it
-button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
+button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
 
 #We are logged in!
 #nadle NOT NOW
