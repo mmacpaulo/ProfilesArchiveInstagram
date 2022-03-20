@@ -31,21 +31,21 @@ password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 #enter username and password
 usuario = os.getenv('Usuario')
 senha = os.environ.get('Senha')
-print('login efetuado')
 
 # perfilarquivologia 
 username.clear()
 username.send_keys(usuario)
 password.clear()
 password.send_keys(senha)
+print('login efetuado')
 
 #target the login button and click it
-button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
+button = WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
 
 #We are logged in!
 #nadle NOT NOW
 
-not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
+not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not now")]'))).click()
 # not_now2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
 
 # ## Search keywords
