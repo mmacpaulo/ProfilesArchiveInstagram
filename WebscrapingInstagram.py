@@ -55,8 +55,10 @@ def buscar_palavras(keywords):
 #target the search input field
     searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]'))).click()
     
-    searchbox.clear()
-    # searchbox.send_keys(Keys.BACK_SPACE*50)
+    print(searchbox)
+    
+    # searchbox.clear()
+    searchbox.send_keys(Keys.BACK_SPACE*50)
 
 
 
