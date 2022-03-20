@@ -30,7 +30,7 @@ password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 
 #enter username and password
 usuario = os.getenv('Usuario')
-senha = os.environ.get('Senha_secreta')
+senha = os.environ.get('Senha')
 print('login efetuado')
 
 # perfilarquivologia 
