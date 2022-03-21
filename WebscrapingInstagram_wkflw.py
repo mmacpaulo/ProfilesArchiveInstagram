@@ -9,20 +9,17 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-
+import os
 
 # ## Download ChromeDriver
 # Now we need to download latest stable release of ChromeDriver from:
 # <br>
 # https://chromedriver.chromium.org/
 
-# In[134]:
-
-
 #specify the path to chromedriver.exe (download and save on your computer)
 option = webdriver.ChromeOptions()
-# option.add_argument('headless')
-driver = webdriver.Chrome('/home/claudio/Downloads/Chrome/chromedriver',options=option)
+option.add_argument('headless')
+driver = webdriver.Chrome(options=option)
 
 #open the webpage
 driver.get("http://www.instagram.com")
@@ -32,41 +29,33 @@ username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SE
 password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='password']")))
 
 #enter username and password
-with open('login_out.txt') as userfile:
-    line = userfile.readline() 
-    usuario, senha = line.strip().split(' ')
+usuario = os.getenv('Usuario')
+senha = os.environ.get('Senha')
 
-
+# perfilarquivologia 
 username.clear()
 username.send_keys(usuario)
 password.clear()
 password.send_keys(senha)
+print('login efetuado')
 
 #target the login button and click it
-button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
+button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='loginForm']"))).click()
 
 #We are logged in!
-
-
-# In[135]:
-
-
 #nadle NOT NOW
 
-not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
-not_now2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Agora não")]'))).click()
-
+not_now = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]'))).click()
 
 # ## Search keywords
-
-# In[136]:
 
 def buscar_palavras(keywords):
     import time
 
 #target the search input field
-    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Pesquisar']")))
+    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
     searchbox.clear()
+
 
 #search for the hashtag cat
     # keyword = "arquivologia"
@@ -75,7 +64,6 @@ def buscar_palavras(keywords):
     divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
 
     return divs
-
 
 # Salva a lista com resultados da busca
 
@@ -118,7 +106,7 @@ def buscar_seguir_perfil(urls):
         print("seguidores não foi possivel encontrar")
 
     try:
-        followinger = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Seguir")]'))).click()
+        followinger = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Seguir")]'))).click()
         print(' ### ### Seguindo um novo perfil.')
     except:
         print('Já está seguindo este perfil.')
@@ -134,7 +122,7 @@ from datetime import date
 today = date.today()
 # dd/mm/YY
 d1 = today.strftime("%d%m%Y")
-d1fmt = today.strftime("%d/%m/%Y")
+d1fmt = today.strftime("%d/%/m/%Y")
 
 data = pd.read_csv('lista.txt')
 fileout = f"lista_{d1}"

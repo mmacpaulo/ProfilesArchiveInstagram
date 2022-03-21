@@ -1,0 +1,50 @@
+name: scraper-instagram_bot
+
+on:
+  [push]
+  # schedule:
+  #   - cron: '0 */12 * * *' # runs at each 12:00 everyday
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # check
+        
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+          poetry-version: '1.0.10'
+      
+      - name: Install app dependencies
+        run: poetry install
+          
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requeriments.txt
+          
+      - name: execute py script to scrap # scrap profiles
+        env: 
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          Usuario: ${{secrets.USUARIO}}
+          Senha: ${{secrets.SENHA_SECRETA}}
+
+        run: python WebscrapingInstagram.py
+      
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "update data" -a
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: main  
+          github_token: ${{ secrets.SECRET_TOKEN }}
