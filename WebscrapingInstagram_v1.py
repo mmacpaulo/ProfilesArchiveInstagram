@@ -103,8 +103,6 @@ with open('login_out.txt') as userfile:
 
 bot.login_ig(user = usuario, passd = senha)
 
-print("logado ")
-exit()
 
 # open keywords keywords.txt files and save list lista.txt. 
 
