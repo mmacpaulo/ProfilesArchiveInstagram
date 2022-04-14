@@ -37,7 +37,7 @@ jobs:
           Usuario: ${{secrets.USUARIO}}
           Senha: ${{secrets.SENHA_SECRETA}}
 
-        run: python WebscrapingInstagram.py
+        run: python WebscrapingInstagram_wkflw_test.py
       
       - name: commit files
         run: |
