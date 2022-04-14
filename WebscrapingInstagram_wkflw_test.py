@@ -57,7 +57,7 @@ def buscar_palavras(keywords):
     import time
 
 #target the search input field
-    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
+    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')))
     searchbox.clear()
 
 
