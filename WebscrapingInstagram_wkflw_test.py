@@ -9,6 +9,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 import os
 
 # ## Download ChromeDriver
@@ -19,7 +23,7 @@ import os
 #specify the path to chromedriver.exe (download and save on your computer)
 option = webdriver.ChromeOptions()
 option.add_argument('headless')
-driver = webdriver.Chrome(options=option)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
 
 #open the webpage
 driver.get("http://www.instagram.com")
