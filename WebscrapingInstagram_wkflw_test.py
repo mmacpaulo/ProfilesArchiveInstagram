@@ -12,7 +12,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-
+import time
 import os
 
 # ## Download ChromeDriver
@@ -71,14 +71,14 @@ def buscar_palavras(keywords):
 #search for the hashtag cat
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
-    time.sleep(2)
-    divs = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located(By.CLASS_NAME, 'fuqBx'))
+    time.sleep(5)
+    divs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(By.CLASS_NAME, 'fuqBx'))
     # divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
 
     return divs
 
 # Salva a lista com resultados da busca
-
+time.sleep(15)
 with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
     buscapor = palavras.readlines()
     for iw in buscapor:
@@ -87,7 +87,7 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
         for div in divs:
             print("___")
             elements = div.find_elements(By.TAG_NAME, 'a')
-
+            print("_____ > ",len(elements))
             for element in elements:
                 filew.write(element.get_attribute("href"))
                 filew.write('\n')
