@@ -71,7 +71,7 @@ def buscar_palavras(keywords):
 #search for the hashtag cat
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
-    time.sleep(5)
+    time.sleep(10)
     divs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.CLASS_NAME, 'fuqBx')))
     # divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
 
