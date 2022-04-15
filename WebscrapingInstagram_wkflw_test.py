@@ -72,8 +72,9 @@ def buscar_palavras(keywords):
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
     time.sleep(10)
-    divs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.CLASS_NAME, 'yPP5B')))
-    # divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
+    # _01UL2 fuqBx
+    # divs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.CLASS_NAME, 'yPP5B')))
+    divs = driver.find_elements(By.CLASS_NAME, '_01UL2')
 
     return divs
 
