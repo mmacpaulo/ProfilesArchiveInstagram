@@ -22,7 +22,7 @@ import os
 
 #specify the path to chromedriver.exe (download and save on your computer)
 option = webdriver.ChromeOptions()
-# option.add_argument('--headless')
+option.add_argument('--headless')
 # option.add_argument("--disable-gpu")
 # option.add_argument("--window-size=1920,1200")
 option.add_argument("--ignore-certificate-errors")
