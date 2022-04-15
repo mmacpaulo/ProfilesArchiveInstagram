@@ -72,20 +72,16 @@ def buscar_palavras(keywords):
 #search for the hashtag cat
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
-    time.sleep(5)
+    time.sleep(3)
     # _01UL2 fuqBx
-    popUp = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]')))
+    popUp = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
  
-    div = popUp.find_elements(By.TAG_NAME, 'div')
-    for di in div:
-        divs = di.find_elements(By.CLASS_NAME, 'fuqBx')
-        if divs != []:
-            break
-
+    divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
+    
     return divs
 
 # Salva a lista com resultados da busca
-time.sleep(15)
+time.sleep(10)
 with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
     buscapor = palavras.readlines()
     for iw in buscapor:
@@ -98,6 +94,7 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
             for element in elements:
                 filew.write(element.get_attribute("href"))
                 filew.write('\n')
+        break
 
 palavras.close()
 filew.close()

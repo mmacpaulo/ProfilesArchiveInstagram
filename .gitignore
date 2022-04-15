@@ -13,6 +13,7 @@ format_files.py
 python-selenium.yml
 lista.txt
 local_WebscrapingInstagram_wkflw_test.py
+local_WebscrapingInstagram_wkflw_test.ipynb
 
 # Distribution / packaging
 .Python
