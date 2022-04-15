@@ -64,14 +64,16 @@ def buscar_palavras(keywords):
     import time
 
 #target the search input field
-    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')))
-    # entrada = searchbox.find_element(By.TAG_NAME,'input')
-    searchbox.clear()
+    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]')))
+    entrada = searchbox.find_element(By.TAG_NAME,'input')
+    entrada.clear()
 
 
 #search for the hashtag cat
     # keyword = "arquivologia"
-    searchbox.send_keys(keywords)
+    entrada.send_keys(keywords)
+    ver = searchbox.find_element(By.TAG_NAME,'input').get_attribute("value")
+    print("____    -_______ ",ver)
     time.sleep(3)
     # _01UL2 fuqBx
     popUp = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
