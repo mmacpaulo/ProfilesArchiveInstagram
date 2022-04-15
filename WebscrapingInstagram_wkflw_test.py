@@ -90,10 +90,12 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
     for iw in buscapor:
         page = buscar_palavras(f'@{iw.split()[0]}')
         soup = BeautifulSoup(page, 'html.parser')
-        for ii in soup.find('div',  class_='fuqBx').find_all('a'):
-            print(ii['href'])
-            filew.write(ii)
-            filew.write('\n')
+        div = soup.find_all('div',  class_='_01UL2')
+
+        for kk in div:
+            aa = kk.find('div',  class_='fuqBx')
+            for ll in aa:
+                print(ll.find('a')['href'])
         break
 
 palavras.close()
