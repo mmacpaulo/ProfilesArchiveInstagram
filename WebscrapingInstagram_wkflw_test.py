@@ -73,7 +73,7 @@ def buscar_palavras(keywords):
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
 
-    time.sleep(7)
+    time.sleep(20)
     page_scr = driver.page_source
 
     # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
