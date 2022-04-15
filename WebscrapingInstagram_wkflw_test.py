@@ -73,8 +73,8 @@ def buscar_palavras(keywords):
     entrada.send_keys(keywords)
     time.sleep(10)
     # _01UL2 fuqBx
-    # divs = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.CLASS_NAME, 'yPP5B')))
-    divs = driver.find_elements(By.CLASS_NAME, '_01UL2')
+    # divs = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, 'yPP5B')))
+    divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
 
     return divs
 
