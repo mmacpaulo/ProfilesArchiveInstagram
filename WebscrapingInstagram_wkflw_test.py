@@ -73,7 +73,7 @@ def buscar_palavras(keywords):
     # keyword = "arquivologia"
     entrada.send_keys(keywords)
 
-    time.sleep(5)
+    time.sleep(7)
     page_scr = driver.page_source
 
     # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
@@ -88,18 +88,24 @@ from bs4 import BeautifulSoup
 with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
     buscapor = palavras.readlines()
     for iw in buscapor:
+        
         page = buscar_palavras(f'@{iw.split()[0]}')
+        
         soup = BeautifulSoup(page, 'html.parser')
+        
         div = soup.find_all('div',  class_='_01UL2')
-
+        print(div)
         for kk in div:
             aa = kk.find('div',  class_='fuqBx')
             for ll in aa:
                 print(ll.find('a')['href'])
+        
         break
 
 palavras.close()
 filew.close()
+
+exit()
 # abre a lista e busca as publicaçoes e seguidores em uma nova lista.
 
 def buscar_seguir_perfil(urls):
