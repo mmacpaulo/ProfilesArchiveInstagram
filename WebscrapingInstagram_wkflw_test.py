@@ -75,7 +75,12 @@ def buscar_palavras(keywords):
     time.sleep(5)
     # _01UL2 fuqBx
     popUp = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]')))
-    divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
+ 
+    div = popUp.find_elements(By.TAG_NAME, 'div')
+    for di in div:
+        divs = di.find_elements(By.CLASS_NAME, 'fuqBx')
+        if divs != []:
+            break
 
     return divs
 
