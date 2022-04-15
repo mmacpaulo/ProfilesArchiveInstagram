@@ -22,7 +22,7 @@ import os
 
 #specify the path to chromedriver.exe (download and save on your computer)
 option = webdriver.ChromeOptions()
-option.add_argument('--headless')
+# option.add_argument('--headless')
 # option.add_argument("--disable-gpu")
 # option.add_argument("--window-size=1920,1200")
 option.add_argument("--ignore-certificate-errors")
@@ -94,6 +94,7 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
         soup = BeautifulSoup(page, 'html.parser')
         
         div = soup.find('div',  class_='_01UL2')
+        
         print(div)
         aa = div.find('div',  class_='fuqBx')
         for ll in aa:
