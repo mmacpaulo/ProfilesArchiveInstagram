@@ -95,10 +95,9 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
         
         div = soup.find('div',  class_='_01UL2')
         print(div)
-        for kk in div:
-            aa = kk.find('div',  class_='fuqBx')
-            for ll in aa:
-                print(ll.find('a')['href'])
+        aa = div.find('div',  class_='fuqBx')
+        for ll in aa:
+            print(ll.find('a')['href'])
         
         break
 
