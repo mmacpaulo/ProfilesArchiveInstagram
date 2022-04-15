@@ -24,11 +24,11 @@ import os
 option = webdriver.ChromeOptions()
 option.add_argument('--headless')
 # option.add_argument("--disable-gpu")
-option.add_argument("--window-size=1920,1200")
+# option.add_argument("--window-size=1920,1200")
 option.add_argument("--ignore-certificate-errors")
 option.add_argument("--disable-extensions")
 # option.add_argument("--no-sandbox")
-option.add_argument("--disable-dev-shm-usage")
+# option.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
 driver.implicitly_wait(10)
 
@@ -93,7 +93,7 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
         
         soup = BeautifulSoup(page, 'html.parser')
         
-        div = soup.find_all('div',  class_='_01UL2')
+        div = soup.find('div',  class_='_01UL2')
         print(div)
         for kk in div:
             aa = kk.find('div',  class_='fuqBx')
