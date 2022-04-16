@@ -24,12 +24,12 @@ import os
 option = webdriver.ChromeOptions()
 option.add_argument('--headless')
 option.add_argument("--disable-gpu")
-# option.add_argument("--window-size=1920,1200")
+option.add_argument("--window-size=1920,1080")
 option.add_argument("--ignore-certificate-errors")
 option.add_argument("--disable-extensions")
 option.add_argument("--no-sandbox")
 option.add_argument("--disable-dev-shm-usage")
-option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
+option.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
 driver.implicitly_wait(10)
@@ -77,7 +77,7 @@ def buscar_palavras(keywords):
 
     time.sleep(20)
     page_scr = driver.page_source
-    print("   ", len(page_scr))
+    print(page_scr)
 
     # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
     # divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
