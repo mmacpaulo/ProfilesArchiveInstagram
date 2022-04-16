@@ -29,7 +29,13 @@ option.add_argument("--ignore-certificate-errors")
 option.add_argument("--disable-extensions")
 option.add_argument("--no-sandbox")
 option.add_argument("--disable-dev-shm-usage")
-option.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36")
+# options.AddExcludedArgument("enable-automation");
+# option.add_experimental_option("enable-automation");
+
+# options.AddArgument("disable-popup-blocking");
+
+# options.AddAdditionalCapability("useAutomationExtension", false);
+# option.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
 driver.implicitly_wait(10)
