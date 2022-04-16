@@ -74,7 +74,7 @@ def buscar_palavras(keywords):
     entrada.send_keys(keywords)
 
     time.sleep(20)
-    page_scr = WebDriverWait(driver, 10).page_source
+    page_scr = driver.page_source
 
     # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
     # divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
