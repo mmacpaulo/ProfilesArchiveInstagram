@@ -29,6 +29,8 @@ option.add_argument("--ignore-certificate-errors")
 option.add_argument("--disable-extensions")
 option.add_argument("--no-sandbox")
 option.add_argument("--disable-dev-shm-usage")
+option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
+
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
 driver.implicitly_wait(10)
 
@@ -75,6 +77,7 @@ def buscar_palavras(keywords):
 
     time.sleep(20)
     page_scr = driver.page_source
+    print("   ", len(page_scr))
 
     # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
     # divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
@@ -92,7 +95,7 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
         page = buscar_palavras(f'@{iw.split()[0]}')
         
         soup = BeautifulSoup(page, 'html.parser')
-        
+
         div = soup.find('div',  class_='_01UL2')
         
         print(div)
