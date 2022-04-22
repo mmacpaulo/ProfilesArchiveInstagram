@@ -5,6 +5,7 @@ O projeto 'Perfis sobre Arquivologia no Instagram' surgiu a partir dos desdobram
 
 Listas anteriores:
 
+- [20/03/2022](/lista_20032022.md)
 - [31/01/2022](/lista_31012022.md)
 - [28/12/2021](/lista_28122022.md)
 
