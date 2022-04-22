@@ -9,6 +9,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 import os
 
 # ## Download ChromeDriver
@@ -18,8 +22,23 @@ import os
 
 #specify the path to chromedriver.exe (download and save on your computer)
 option = webdriver.ChromeOptions()
-option.add_argument('headless')
-driver = webdriver.Chrome(options=option)
+option.add_argument('--headless')
+option.add_argument("--disable-gpu")
+option.add_argument("--window-size=1920,1080")
+option.add_argument("--ignore-certificate-errors")
+option.add_argument("--disable-extensions")
+option.add_argument("--no-sandbox")
+option.add_argument("--disable-dev-shm-usage")
+# options.AddExcludedArgument("enable-automation");
+# option.add_experimental_option("enable-automation");
+
+# options.AddArgument("disable-popup-blocking");
+
+# options.AddAdditionalCapability("useAutomationExtension", false);
+# option.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36")
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=option)
+driver.implicitly_wait(10)
 
 #open the webpage
 driver.get("http://www.instagram.com")
@@ -53,35 +72,49 @@ def buscar_palavras(keywords):
     import time
 
 #target the search input field
-    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
-    searchbox.clear()
+    searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]')))
+    entrada = searchbox.find_element(By.TAG_NAME,'input')
+    entrada.clear()
 
 
 #search for the hashtag cat
     # keyword = "arquivologia"
-    searchbox.send_keys(keywords)
-    time.sleep(2)
-    divs = driver.find_elements(By.CLASS_NAME, 'fuqBx')
+    entrada.send_keys(keywords)
 
-    return divs
+    time.sleep(20)
+    page_scr = driver.page_source
+    print(page_scr)
+
+    # popUp = WebDriverWait(driver, 10).until(EC.visibility_of_any_elements_located((By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]')))
+    # divs = popUp.find_elements(By.CLASS_NAME, 'fuqBx')
+    
+    return page_scr
 
 # Salva a lista com resultados da busca
+time.sleep(5)
+from bs4 import BeautifulSoup
 
 with open('lista.txt','w') as filew,  open('keywords.txt','r') as palavras:
     buscapor = palavras.readlines()
     for iw in buscapor:
-        divs = buscar_palavras(f'@{iw.split()[0]}')
-    
-        for div in divs:
-            print("___")
-            elements = div.find_elements(By.TAG_NAME, 'a')
+        
+        page = buscar_palavras(f'@{iw.split()[0]}')
+        
+        soup = BeautifulSoup(page, 'html.parser')
 
-            for element in elements:
-                filew.write(element.get_attribute("href"))
-                filew.write('\n')
+        div = soup.find('div',  class_='_01UL2')
+        
+        print(div)
+        aa = div.find('div',  class_='fuqBx')
+        for ll in aa:
+            print(ll.find('a')['href'])
+        
+        break
 
 palavras.close()
 filew.close()
+
+exit()
 # abre a lista e busca as publicaçoes e seguidores em uma nova lista.
 
 def buscar_seguir_perfil(urls):
