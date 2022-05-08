@@ -189,7 +189,7 @@ for iw in ndata.values:
     notag = iw.strip().split('/')
 
     if len(notag) < 6:
-        post,follow = bot.get_status_and_follow_profiles(iw.strip(), follow=False)
+        post,follow = bot.get_status_and_follow_profiles(iw.strip(), follow=True)
     
         profileig = iw.strip().split('/')[-2]
 
