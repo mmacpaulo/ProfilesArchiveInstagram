@@ -3,6 +3,7 @@
 
 # # Web Scraping Instagram with Selenium
 
+from unicodedata import name
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -55,7 +56,7 @@ class BotInstagram():
         return divs
         
 
-    def get_status_and_follow_profiles(self, urls):
+    def get_status_and_follow_profiles(self, urls, follow = True):
 
         self.address(urls)
         time.sleep(3)
@@ -74,15 +75,16 @@ class BotInstagram():
             followers = "0"
             print("Followers - Not found")
 
-        try:
-            followbutton = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/main/div/header/section/div[1]/div[1]/div/div/div/span/span[1]/button')))
-            if followbutton.text == "Seguir" or followbutton.text == "Follow":
-                followbutton.click()
-                print(' ### ### Following up new profile. !!!')
-            else:
+        if follow:
+            try:
+                followbutton = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/section/main/div/header/section/div[1]/div[1]/div/div/div/span/span[1]/button')))
+                if followbutton.text == "Seguir" or followbutton.text == "Follow":
+                    followbutton.click()
+                    print(' ### ### Following up new profile. !!!')
+                else:
+                    pass
+            except:
                 pass
-        except:
-            pass
 
         return posting,followers
 
@@ -105,6 +107,7 @@ bot.login_ig(user = usuario, passd = senha)
 
 
 # open keywords keywords.txt files and save list lista.txt. 
+find_profiles = []
 
 with open('lista.txt','w') as filew,  open('keywords.txt','r') as words:
 
@@ -112,17 +115,29 @@ with open('lista.txt','w') as filew,  open('keywords.txt','r') as words:
 
     for iw in search_word:
 
-        divs = bot.search_words(f'@{iw.split()[0]}')
+        divs = bot.search_words(f'{iw.split()[0].strip()}')
     
         for div in divs:
 
             print(f"_{iw.split()[0]}_")
             elements = div.find_elements(By.TAG_NAME, 'a')
 
+            
             for element in elements:
 
-                filew.write(element.get_attribute("href"))
-                filew.write('\n')
+                link = element.get_attribute("href")
+                
+                if link not in find_profiles:
+                    
+                    if "tags" not in link:
+                        find_profiles.append(link)
+                        
+                        filew.write(link)
+                        filew.write('\n')
+                    else: 
+                        continue
+                else: 
+                    continue
 
 words.close()
 
@@ -138,19 +153,55 @@ data = pd.read_csv('lista.txt',names=['urls_pf'])
 ndata = data.drop_duplicates(keep='last').sort_values('urls_pf')
 
 
-outdata = pd.DataFrame()
+outdata = pd.DataFrame(columns=['NumeroSeguidores','NumeroPostagens','@Perfil','url'])
 
 # open each profile and scrap followers and number of publications.
+def string_ptbr_tonumber(number_string):
+    
+    if type(number_string) == float:
+        
+        valor = int(number_string)
+
+    else:
+
+        if "," in number_string:
+            valor = number_string.replace(",",".").replace('mil','')
+            valor = int(float(valor)*1000)
+            
+        elif "." in number_string:
+            valor = number_string.replace(".","")
+            valor = int(float(valor))
+            
+        elif "mil" in number_string:
+            valor = number_string.replace('mil','')
+            valor = int(float(valor)*1000)
+            
+        else:
+            valor = int(number_string)
+
+
+    return valor
+
 
 for iw in ndata.values:
     iw=iw[0]
-    post,follow = bot.get_status_and_follow_profiles(iw.strip())
+
+    notag = iw.strip().split('/')
+
+    if len(notag) < 6:
+        post,follow = bot.get_status_and_follow_profiles(iw.strip(), follow=True)
     
-    profileig = iw.strip().split('/')[-2]
+        profileig = iw.strip().split('/')[-2]
 
-    urllink = iw.strip()
+        urllink = iw.strip()
+        
+        nflw = string_ptbr_tonumber(follow)
+        npost = string_ptbr_tonumber(post)
 
-    outdata.loc[len(outdata),['NumeroSeguidores','NumeroPostagens','@Perfil','url']] = [follow, post, profileig , urllink]
+        outdata.loc[len(outdata),['NumeroSeguidores','NumeroPostagens','@Perfil','url']] = [nflw, npost, profileig , urllink]
+    
+    else:
+        continue
 
 # close bot instagram.
 bot.quit()
@@ -165,13 +216,16 @@ date_s = today.strftime("%d/%m/%Y")
 fileout = f"lista_{d1}"
 
 
+order_follow_number = outdata.sort_values('NumeroSeguidores', ascending=False)
 # save to file the list. arquived file
-outdata.index = pd.RangeIndex(start=1, stop=len(ndata)+1, step=1)
 
-outdata.to_csv(fileout+'.csv')
+
+order_follow_number.index = pd.RangeIndex(start=1, stop=len(order_follow_number)+1, step=1)
+
+order_follow_number.to_csv(fileout+'.csv')
 
 # save markdown. backup list
-outdata.to_markdown(fileout+'.md')
+order_follow_number.to_markdown(fileout+'.md')
 
 
 # format list to visualize in markdown file on github. creat a final list (lista_atual.txt) form backup list (lista_DDMMYYYY.md)
