@@ -5,9 +5,9 @@ O projeto 'Perfis sobre Arquivologia no Instagram' surgiu a partir dos desdobram
 
 Listas anteriores:
 
+- [07/05/2022](/lista_07052022.md)
 - [22/04/2022](/lista_22042022.md)
 - [20/03/2022](/lista_20032022.md)
-- [31/01/2022](/lista_31012022.md)
 - [28/12/2021](/lista_28122022.md)
 
 É possível identificar nas listas alguns perfis que não tratam especificamente sobre 'arquivos' com relação a 'Arquivologia'. Optou-se por manter os registros, visto que uma triagem mais minunciosa poderá ser realizado de acordo com interesses de outras pesquisas.
