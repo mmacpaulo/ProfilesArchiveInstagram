@@ -12,7 +12,7 @@ Listas anteriores:
 
 É possível identificar nas listas alguns perfis que não tratam especificamente sobre 'arquivos' com relação a 'Arquivologia'. Optou-se por manter os registros, visto que uma triagem mais minunciosa poderá ser realizado de acordo com interesses de outras pesquisas.
 
-O projeto 'Perfis sobre Arquivologia no Instagram' foi idealizado e desenvolvido por Marcos Machado Paulo (acadêmico de Arquivologia da UFSM) e Cláudio Machado Paulo (Doutor em Ciências e Aplicações Geoespaciais pela UPM-SP e Cientista de Dados).
+O projeto 'Perfis sobre Arquivologia no Instagram' foi idealizado e desenvolvido por Marcos Machado Paulo (Arquivista) e Cláudio Machado Paulo (Doutor em Ciências e Aplicações Geoespaciais pela UPM-SP e Cientista de Dados).
 
 
 [^1]: A pesquisa está registrada sob o [nº 057010 no GEAIC/CCSH/UFSM](https://portal.ufsm.br/projetos/publico/projetos/view.html?idProjeto=69532), com autoria do acadêmico Marcos Machado Paulo e orientação do professor Me. Rafael Chaves Ferreira. Integrou a etapa parcial para conclusão do curso de Arquivologia da UFSM, com defesa realizada no dia 31 de janeiro de 2022 ([disponível via Youtube](https://www.youtube.com/watch?v=91Chb0Kebz8)).
